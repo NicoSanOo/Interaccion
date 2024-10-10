@@ -1,0 +1,51 @@
+body {
+	background-color: #202020;
+	color: #fff;
+}
+
+h1 {
+	font-size: 16px;
+}
+
+
+.main-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+	.main-container:before, .main-container:after {
+		content: '';
+		display: block;
+		position: absolute;
+		margin: auto;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		background-color: #00ff00;
+		z-index: -1;
+		opacity: 0.25;
+	}
+
+	.main-container:before {
+		width: 1px;
+		height: 100%;
+	}
+	.main-container:after {
+		width: 100%;
+		height: 1px;
+	}
+
+
+
+.text-wrapper {
+	position: absolute;
+}
+
+.text-wrapper .mouse-text {
+	width: 100%;
+}

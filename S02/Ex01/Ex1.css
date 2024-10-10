@@ -1,0 +1,93 @@
+body {
+	background-color: #202020;
+}
+
+figure {
+	margin: 0;
+	opacity: 0.7;
+}
+
+figcaption {
+	display: none;
+}
+
+.main-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	box-sizing: border-box;
+}
+
+	.main-container:before, .main-container:after {
+		content: '';
+		display: block;
+		position: absolute;
+		margin: auto;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		background-color: #00ff00;
+		z-index: -1;
+		opacity: 0;
+	}
+
+	.main-container:before {
+		width: 1px;
+		height: 100%;
+	}
+	.main-container:after {
+		width: 100%;
+		height: 1px;
+	}
+
+
+.img-wrapper.option-1 {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	width: 300px;
+	height: 300px;
+}
+
+
+.img-wrapper.option-2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+	.img-wrapper.option-2 img {
+		width: 300px;
+		height: 300px;
+	}
+
+
+.img-wrapper.option-3 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+	.img-wrapper.option-3 img {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		/* transform: translate3d(-50%, -50%, 0) rotate(-45deg); */
+		/* transform: translate3d(-50%, -50%, 0) skew(-15deg); */
+	}
+
+
+
+img:hover {
+	outline: 5px solid #fff;
+}
